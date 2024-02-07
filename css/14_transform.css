@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper img {
+  width: 300px;
+  margin: 50px 0;
+}
+/* 요소이동 translate(x, y) */
+/* position값 변경없이 요소 이동 가능 */
+.wrapper img:first-child:hover {
+  transform: translate(-100px, 100px);
+}
+/* 확장/축소 scale(n) */
+.wrapper img:nth-child(2):hover {
+  transform: scale(.7)
+}
+/* 회전 rotate(n deg) */
+.wrapper img:last-child {
+  transform: rotate(270deg);
+}
+
